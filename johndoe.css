@@ -8,14 +8,13 @@
 
 }
 body,html{
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
     margin: 0 !important;
-    padding: 0 !important
+    padding: 0 !important;
+    scroll-behavior: smooth;
 }
 .mainn{
     display: none;
+    transition: all 1s ease
 }
 .hide{
     opacity: 0;
