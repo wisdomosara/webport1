@@ -1,6 +1,6 @@
 window.onload = function() {
-    document.querySelector(".preload").classList.add("hide")
     document.querySelector(".mainn").style.display = "block"
+    document.querySelector(".preload").classList.add("hide")
     console.log("hidee")
 let hand = document.querySelector(".hand")
 let img = document.querySelector(".hand img")
