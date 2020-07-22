@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+
+/* ALL CLASSES ON THE CSS STYLESHEET ARE ARRANGED IN DESENDING ORDER FLOW FROM THE TOP OF THE HTML TO THE FOOTER..JUST FOLLOW THE FLOW */
 :root{
     --primary-text:"lora", sans-serif;
     --bold: 'Poppins';
     --main-colour: #6F2CFF;
     --small-text-size:18px;
-
 }
 body,html{
     margin: 0 !important;
     padding: 0 !important;
     scroll-behavior: smooth;
+}
+h1,h2,h3,h4{
+    font-family: var(--bold)
 }
 .mainn{
     display: none;
@@ -19,8 +23,50 @@ body,html{
 .hide{
     opacity: 0;
     pointer-events: none;
-    transition: opacity 1s ease;
+    transition: opacity 2s ease;
 }
+.up-btn{
+    background-color: #6F2CFF;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom:2%;
+    right:2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    border-radius:50%;
+    z-index: 100;
+    animation: animation 1s infinite alternate;
+}
+.up-btn a, .up-btn a:hover{
+    color: white;
+    text-decoration: none;
+}
+.navbar-toggler:hover, .navbar-toggler:target, .navbar-toggler:focus{
+    outline:none;
+    border:none;
+    border-style:none
+}
+.navbar-toggler{
+    outline:none;
+    border:none;
+    border-style:none !important
+}
+.navbar{
+    position: relative;
+     background-color:transparent !important;
+     color:white !important
+ }
+ .navbar a{
+     color:white !important
+ }
+ .logo{
+     font-size: 30px !important;
+     font-weight: bolder;
+     margin-left: 5% !important
+ }
 .preload{
     display: flex;
     justify-content: center;
@@ -31,7 +77,7 @@ body,html{
     pointer-events: none;
     background-color: #6F2CFF;
     position: fixed;
-    z-index: 100;
+    z-index: 3;
 }
 .preload h1{
     font-size: 30px !important;
@@ -42,10 +88,8 @@ body,html{
 
 @keyframes animation {
     0%     {color:white; opacity:1}
-    100.0%  {color: #1976D2; opacity:0.3}
+    100.0%  {color: #1976D2; opacity:0.5}
 }
-
-
 main{
     background-image: url("./images/Rectangle\ 1.png");
     height: 800px;
@@ -67,28 +111,20 @@ p{
     font-size: 18px;
     font-family: var(--primary-text)
 }
-.navw{
-   position: relative;
-    background-color:transparent !important;
-    color:white !important
-}
-.navw a{
-    color:white !important
-}
-.logo{
-    font-size: 30px !important;
-    font-weight: bolder;
-    margin-left: 5% !important
-}
-button a{
+.hero-text button a{
     color: white;
     text-decoration: none;
 
 }
-button a:hover{
+.hero-text button a:hover{
     color: #6F2CFF;
     text-decoration: none;
-    
+}
+.heading{
+    color:#6F2CFF;
+    font-size: 16px;
+    font-weight: bold;
+    padding-top:40px
 }
 .logo span{
     color: #6F2CFF;
@@ -96,7 +132,8 @@ button a:hover{
 .active{
     border-bottom: 2px solid #6F2CFF
 }
-.hero-text{position: relative;
+.hero-text{
+    position: relative;
     color: white;
     top:26%;
 }
@@ -168,9 +205,6 @@ button a:hover{
 .skills-text p{
     font-size: 18px
 }
-h1,h2,h3,h4{
-    font-family: var(--bold)
-}
 .details p{
     font-size: 16px;
     font-family: var(--bold)
@@ -188,60 +222,22 @@ h1,h2,h3,h4{
     margin:20px 40px;
     text-align: center !important;
 }
-.but1{
+.btn1{
     background-color: white;
     border:3px solid #6F2CFF;
     transition: all 0.5s ease-in-out;
     border-radius: 5px
 }
-.but1:hover{
+.btn1:hover{
     background-color: #6F2CFF;
     color: white;
     transition: all 0.5s ease-in-out
 }
-.but2{
+.btn2{
     background-color: #6F2CFF;
     border:2px solid white;
     color: white;
     border-radius: 5px
-}
-.port-text p{
-    font-size:1.2vw;
-    font-family: var(--primary-text)
-}
-.port-text h4{
-    font-weight: 500;
-    font-family: var(--bold)
-}
-.port-text h5{
-    font-size:15px;
-    font-family: var(--bold)
-}
-.port{
-    height: 360px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.port img{
-    max-height: 100% !important
-}
-.port1{
-    background-color:rgb(1, 129, 1);
-    order: 1;
-}
-.port2{
-    background-color:#8C32F0;
-    order: 1;
-}
-.port3{
-    background-color:#F60000;
-    order: 1
-}
-.port4{
-    background-color:rgb(16, 145, 165);
-    order: 1;
 }
 #resume{
     background-color: #E5E5E5
@@ -249,9 +245,8 @@ h1,h2,h3,h4{
 #experience{
     background-color: #E5E5E5;
     padding-top:40px
-
 }
-.middle{
+.exp-middle{
     position: absolute;
     left:35%;
     top:0;
@@ -262,7 +257,7 @@ h1,h2,h3,h4{
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 100
+    z-index: 1
 } 
 .exp-item{
     position: relative;
@@ -271,10 +266,10 @@ h1,h2,h3,h4{
 .exp-item h4{
     font-weight: bolder
 }
-#resume .dif{
+#resume .heading{
     font-size: 24px !important
 }
-.left{
+.exp-left{
     width: 260px;
     position: absolute;
     left:5%;
@@ -282,7 +277,7 @@ h1,h2,h3,h4{
     top:0;
     margin-top: 20px
 }
-.right{
+.exp-right{
     width: 55%;
     position: absolute;
     left:38%;
@@ -291,8 +286,46 @@ h1,h2,h3,h4{
     border-left:1px solid black;
     padding:20px 1px 20px 80px;
 }
-.left p{
+.exp-left p{
     margin-top:-10px
+}
+.portfolio-text p{
+    font-size:1.2vw;
+    font-family: var(--primary-text)
+}
+.portfolio-text h4{
+    font-weight: 500;
+    font-family: var(--bold)
+}
+.portfolio-text h5{
+    font-size:15px;
+    font-family: var(--bold)
+}
+.portfolio{
+    height: 360px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio img{
+    max-height: 100% !important
+}
+.portfolio1{
+    background-color:rgb(1, 129, 1);
+    order: 1;
+}
+.portfolio2{
+    background-color:#8C32F0;
+    order: 1;
+}
+.portfolio3{
+    background-color:#F60000;
+    order: 1
+}
+.portfolio4{
+    background-color:rgb(16, 145, 165);
+    order: 1;
 }
 .services-items{
     width:270px;
@@ -317,7 +350,7 @@ h1,h2,h3,h4{
     height:2px;
     background-color: #000000;
 }
-.before{
+.milestone{
     width:100px;
     height: 200px;
     display: flex;
@@ -325,23 +358,9 @@ h1,h2,h3,h4{
     flex-direction: column;
     padding: 10px 0
 }
-.before-contact{
+.milestones{
     background-color: #6F2CFF;
     padding: 20px 14% !important;
-}
-.after-contact{
-    padding: 20px 12% !important;
-}
-.after p{
-    font-size: 14px
-}
-.after{
-    color: #A9A9A9 !important;
-    width:151px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
 }
 input{
     width: 60%;
@@ -364,21 +383,19 @@ textarea{
     color: white !important;
     height:50px !important
 }
-.dif{
-    color:#6F2CFF;
-    font-size: 16px;
-    font-weight: bold;
-    padding-top:40px
+.reach-me{
+    padding: 20px 12% !important;
 }
-.handy:hover, .handy:target, .handy:focus{
-    outline:none;
-    border:none;
-    border-style:none
+.reach-me-item p{
+    font-size: 14px
 }
-.handy{
-    outline:none;
-    border:none;
-    border-style:none !important
+.reach-me-item{
+    color: #A9A9A9 !important;
+    width:151px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
 }
 footer p{
     width: 100% !important
@@ -403,73 +420,7 @@ footer span{
     align-items: baseline !important;
 }
 
-@media only screen and (min-width:431px) {
-    @media only screen and (max-width:577px) {
-        .middle{
-            width:50px;
-            height: 50px;
-            left:11vw;
-        }
-        .middle img{
-            width:20px
-        }
-        .left{
-            margin-top: 1px !important;
-            text-align: left;
-            left: 27%;
-            width: 200px !important
-        }
-        .right p{
-            font-size:12px !important;
-        }
-        .exp-item h4{
-            font-size: 18px !important;
-        }
-        .exp-item{
-            padding: 0 0;
-            height: 200px !important
-        }
-        .right{
-            margin-top:0px;
-            left:17%;
-            width:70vw !important;
-            padding:50px 5px 0 10vw !important
-        }
-    }
-
-}
-@media only screen and (max-width:430px) {
-    .middle{
-        width:30px;
-        height: 30px;
-        left:11.8vw;
-    }
-    .middle img{
-        width:20px
-    }
-    .left{
-        margin-top: 1px !important;
-        text-align: left;
-        left: 27%;
-        width: 200px !important
-    }
-    .right p{
-        font-size:12px !important;
-    }
-    .exp-item h4{
-        font-size: 18px !important;
-    }
-    .exp-item{
-        padding: 0 0;
-        height: 290px !important
-    }
-    .right{
-        margin-top:0px;
-        left:17%;
-        width:70vw !important;
-        padding:50px 5px 0 35px !important
-    }
-}
+/* Css for mobile screen */
 @media only screen and (max-width:577px) {
     main{
         background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("./images/Rectangle\ 2.png");
@@ -479,11 +430,8 @@ footer span{
     p{
         font-size: 14px !important
     }
-    .mobile-nav{
-        z-index: 100;
-    }
-    nav .container{
-        position: sticky !important
+    .navbar{
+        z-index: 2 !important;
     }
     .hero-text{
         padding-top: 200px;
@@ -519,7 +467,7 @@ footer span{
         margin:20px 20px;
         text-align: center !important;
     }
-    .port{
+    .portfolio{
         height: 60vw;
         width: 100%;
         display: flex;
@@ -529,13 +477,13 @@ footer span{
     #portfolio{
         padding: 20px 20px !important
     }
-    .port-text p, .port-text h4, .port-text h5{
+    .portfolio-text p, .portfolio-text h4, .portfolio-text h5{
         text-align: left !important
     }
-    .port-text h5{
+    .portfolio-text h5{
         font-size:3vw;
     }
-    .before-flex{
+    .milestone-flex{
         flex-direction: column;
         align-items: center
     }
@@ -549,7 +497,9 @@ footer span{
         width:100% !important;
     }
     .hide{
-        display: none;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 2s ease;
     }
     #about h5{
         font-size: 14px !important;
@@ -580,9 +530,159 @@ footer span{
         margin: 0 auto !important;
     }
 }
+
+/* Experience positioning for screen size 0px to 430px */
+@media only screen and (max-width:430px) {
+    .exp-middle{
+        width:30px;
+        height: 30px;
+        left:11.8vw;
+    }
+    .exp-middle img{
+        width:20px
+    }
+    .exp-left{
+        margin-top: 1px !important;
+        text-align: left;
+        left: 27%;
+        width: 200px !important
+    }
+    .exp-right p{
+        font-size:12px !important;
+    }
+    .exp-item h4{
+        font-size: 18px !important;
+    }
+    .exp-item{
+        padding: 0 0;
+        height: 290px !important
+    }
+    .exp-right{
+        margin-top:0px;
+        left:17%;
+        width:70vw !important;
+        padding:50px 5px 0 35px !important
+    }
+}
+
+/* Experience positioning for screen size 431px to 577px */
+@media only screen and (min-width:431px) {
+    @media only screen and (max-width:577px) {
+        .exp-middle{
+            width:50px;
+            height: 50px;
+            left:11vw;
+        }
+        .exp-middle img{
+            width:20px
+        }
+        .exp-left{
+            margin-top: 1px !important;
+            text-align: left;
+            left: 27%;
+            width: 200px !important
+        }
+        .exp-right p{
+            font-size:12px !important;
+        }
+        .exp-item h4{
+            font-size: 18px !important;
+        }
+        .exp-item{
+            padding: 0 0;
+            height: 200px !important
+        }
+        .exp-right{
+            margin-top:0px;
+            left:17%;
+            width:70vw !important;
+            padding:50px 5px 0 10vw !important
+        }
+    }
+
+}
+
+/* experience positioning for 578px to 767px */
+@media only screen and (min-width:578px){
+    @media only screen and (max-width:767px){
+        .exp-item{
+            position: relative;
+            height: 27vw;
+        }
+        .exp-item h4{
+            font-weight: bolder;
+            font-size: 22px !important
+        }
+        .exp-item p{
+            font-size: 14px !important
+        }
+        #resume .dif{
+            font-size: 24px !important
+        }
+        .exp-middle{
+            position: absolute;
+            left:34% !important;
+            top:0;
+            background-color: #000000;
+            border-radius: 50%;
+            width: 50px;
+            height:50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 100
+        } 
+        .exp-left{
+            width: 26vw !important;
+            left:2% !important;
+            padding-right: 10px
+        }
+        p{
+            font-size: 12px !important
+        }
+        .exp-right p{
+            font-size: 12px !important
+        }
+        .exp-left p{
+            font-size: 12px !important
+        }
+        .exp-right h4, .exp-left h4{
+            font-size: 20px !important
+        }
+        .exp-right{
+            width: 55%;
+            position: absolute;
+            left:38%;
+            top:0;
+            height:100%;
+            border-left:1px solid black;
+            padding:20px 1px 20px 40px;
+        }
+        .exp-left p{
+            margin-top:-10px
+        }
+        .portfolio{
+            height: 260px !important;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .services-items p{
+            font-size: 18px !important
+        }
+        footer p{
+            width: 100% !important;
+            padding: 0 !important
+        }
+    }
+}
+
+/* Experience positioning for screen sizes 768px to 990px tablets */
+
 @media only screen and (min-width:768px){
     @media only screen and (max-width:990px){
-        .middle{
+        .exp-middle{
             position: absolute;
             left:35% !important;
             top:0;
@@ -595,13 +695,13 @@ footer span{
             justify-content: center;
             z-index: 100
         } 
-        .middle img{
+        .exp-middle img{
             width:30px !important
         }
-        .right p, .left p{
+        .exp-right p, .exp-left p{
             font-size: 12px !important
         }
-        .left{
+        .exp-left{
             width: 30vw !important;
             left:0% !important;
             padding-right: 10px;
@@ -613,7 +713,7 @@ footer span{
         p{
             font-size: 14px !important
         }
-        .right{
+        .exp-right{
             width: 50%;
             position: absolute;
             left:38%;
@@ -626,14 +726,14 @@ footer span{
             padding: 0 0;
             height: 200px !important
         }
-        .port{
+        .portfolio{
             height: 260px !important;
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .right p{
+        .exp-right p{
             font-size: 12px !important;
         }
         .services-items p{
@@ -644,56 +744,59 @@ footer span{
         }
     }
 }
+
+/* experience positioning for screen sizes 1200px upwards */
 @media only screen and (min-width:1200px){
     
-.middle{
-    position: absolute;
-    left:35%;
-    top:0;
-    background-color: #000000;
-    border-radius: 50%;
-    width: 70px;
-    height:70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 100
-} 
-.exp-item{
-    position: relative;
-    height: 250px;
-}
-.exp-item h4{
-    font-weight: bolder
-}
-#resume .dif{
-    font-size: 24px !important
-}
-.left{
-    width: 260px;
-    position: absolute;
-    left:12%;
-    text-align: right;
-    top:0;
-    margin-top: 20px
-}
-.right{
-    width: 55%;
-    position: absolute;
-    left:38%;
-    top:0;
-    height:100%;
-    border-left:1px solid black;
-    padding:20px 1px 20px 80px;
-}
-.left p{
-    margin-top:-10px
-}
+    .exp-middle{
+        position: absolute;
+        left:35%;
+        top:0;
+        background-color: #000000;
+        border-radius: 50%;
+        width: 70px;
+        height:70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100
+    } 
+    .exp-item{
+        position: relative;
+        height: 250px;
+    }
+    .exp-item h4{
+        font-weight: bolder
+    }
+    #resume .dif{
+        font-size: 24px !important
+    }
+    .exp-left{
+        width: 260px;
+        position: absolute;
+        left:12%;
+        text-align: right;
+        top:0;
+        margin-top: 20px
+    }
+    .exp-right{
+        width: 55%;
+        position: absolute;
+        left:38%;
+        top:0;
+        height:100%;
+        border-left:1px solid black;
+        padding:20px 1px 20px 80px;
+    }
+    .exp-left p{
+        margin-top:-10px
+    }
 }
 
+/* Experience positioning for extra large screens */
 @media only screen and (min-width:1500px){
     
-    .middle{
+    .exp-middle{
         position: absolute;
         left:36%;
         top:0;
@@ -716,7 +819,7 @@ footer span{
     #resume .dif{
         font-size: 24px !important
     }
-    .left{
+    .exp-left{
         width: 320px;
         position: absolute;
         left:12%;
@@ -724,7 +827,7 @@ footer span{
         top:0;
         margin-top: 20px
     }
-    .right{
+    .exp-right{
         width: 55%;
         position: absolute;
         left:38%;
@@ -733,81 +836,8 @@ footer span{
         border-left:1px solid black;
         padding:20px 1px 20px 80px;
     }
-    .left p{
+    .exp-left p{
         margin-top:-10px
     }
 }
-@media only screen and (min-width:578px){
-    @media only screen and (max-width:767px){
-        .exp-item{
-            position: relative;
-            height: 27vw;
-        }
-        .exp-item h4{
-            font-weight: bolder;
-            font-size: 22px !important
-        }
-        .exp-item p{
-            font-size: 14px !important
-        }
-        #resume .dif{
-            font-size: 24px !important
-        }
-        .middle{
-            position: absolute;
-            left:34% !important;
-            top:0;
-            background-color: #000000;
-            border-radius: 50%;
-            width: 50px;
-            height:50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 100
-        } 
-        .left{
-            width: 26vw !important;
-            left:2% !important;
-            padding-right: 10px
-        }
-        p{
-            font-size: 12px !important
-        }
-        .right p{
-            font-size: 12px !important
-        }
-        .left p{
-            font-size: 12px !important
-        }
-        .right h4, .left h4{
-            font-size: 20px !important
-        }
-        .right{
-            width: 55%;
-            position: absolute;
-            left:38%;
-            top:0;
-            height:100%;
-            border-left:1px solid black;
-            padding:20px 1px 20px 40px;
-        }
-        .left p{
-            margin-top:-10px
-        }
-        .port{
-            height: 260px !important;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .services-items p{
-            font-size: 18px !important
-        }
-        footer p{
-            width: 100% !important;
-            padding: 0 !important
-        }
-    }
-}
+    
