@@ -603,6 +603,7 @@ footer span{
 
 }
 
+
 /* experience positioning for 578px to 767px */
 @media only screen and (min-width:578px){
     @media only screen and (max-width:767px){
@@ -670,7 +671,7 @@ footer span{
             align-items: center;
         }
         .services-items p{
-            font-size: 18px !important
+            font-size: 16px !important
         }
         footer p{
             width: 100% !important;
@@ -738,7 +739,7 @@ footer span{
             font-size: 12px !important;
         }
         .services-items p{
-            font-size: 14px !important
+            font-size: 16px !important
         }
         footer p{
             width: 100% !important
@@ -789,6 +790,9 @@ footer span{
         border-left:1px solid black;
         padding:20px 1px 20px 80px;
     }
+    .services-items p{
+        font-size: 16px !important
+    }
     .exp-left p{
         margin-top:-10px
     }
@@ -837,8 +841,67 @@ footer span{
         border-left:1px solid black;
         padding:20px 1px 20px 80px;
     }
+    p{
+        font-size: 18px !important
+    }
+    .services-items p{
+        font-size: 16px !important
+    }
     .exp-left p{
         margin-top:-10px
+    }
+}
+@media only screen and (min-width:2070px){
+    
+    .exp-middle{
+        position: absolute;
+        left:36.5%;
+        top:0;
+        background-color: #000000;
+        border-radius: 50%;
+        width: 70px;
+        height:70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100
+    } 
+    .exp-item{
+        position: relative;
+        height: 250px;
+        padding:10px 20%
+    }
+    .exp-item h4{
+        font-weight: bolder
+    }
+    #resume .dif{
+        font-size: 24px !important
+    }
+    .exp-left{
+        width: 320px;
+        position: absolute;
+        left:20%;
+        text-align: right;
+        top:0;
+        margin-top: 20px
+    }
+    .exp-right{
+        width: 30%;
+        position: absolute;
+        left:38%;
+        top:0;
+        height:100%;
+        border-left:1px solid black;
+        padding:20px 1px 20px 80px;
+    }
+    p{
+        font-size: 18px !important
+    }
+    .exp-left p{
+        margin-top:-10px
+    }
+    .services-items p{
+        font-size: 16px !important
     }
 }
     
