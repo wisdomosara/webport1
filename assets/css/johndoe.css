@@ -167,7 +167,7 @@ p{
     position: absolute;
     top:50%;
 }
-.icon-holder img{
+.icon-holder a{
     margin-right:20px;
 }
 .about-text p{
@@ -407,7 +407,7 @@ footer{
 footer span{
     margin-right:10px;
 }
-.icon-holder1 img{
+.icon-holder1 a{
     margin-left:20px;
 }
 .icon-holder1{
@@ -515,7 +515,7 @@ footer span{
         justify-content: center !important;
         align-items: center !important;
     }
-    .icon-holder1 img{
+    .icon-holder1 a{
         margin-right:0 !important;
         margin-left: 0 !important;
     }
