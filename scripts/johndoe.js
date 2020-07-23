@@ -9,10 +9,10 @@ let clicked = false;
     hand.addEventListener("click", function() {
     clicked = !clicked
 if(clicked == true) {
-    img.src = "./images/icons8-delete-30.png"
+    img.src = "../assets/images/icons8-delete-30.png"
     console.log("open")
 }else {
-   img.src = "./images/hamburger.png"
+   img.src = "../assets/images/hamburger.png"
    }
  })
 
