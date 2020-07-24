@@ -108,8 +108,7 @@ main{
     transition:  all 1s ease;
 }
 p{
-    font-size: 18px;
-    font-family: var(--primary-text)
+    font-family: var(--primary-text);
 }
 .hero-text button a{
     color: white;
@@ -154,7 +153,7 @@ p{
 .hero-text p{
     width: 200px;
     font-weight: 200;
-    color: whitesmoke;
+    color: white;
     text-align: center;
     padding: 0 !important;
     position: relative;
@@ -170,24 +169,43 @@ p{
 .icon-holder a{
     margin-right:20px;
 }
+#About h1{
+    font-size: 36px
+}
 .about-text p{
     font-size: 18px;
     line-height: 30px;
+    color: #A9A9A9;
 }
 .profile p{
     padding-right: 2vw;
     line-height: 30px;
-    font-size: 1.5vw;
+    font-size: 18px;
+    color: #A9A9A9;
 }
 .details p{
-    text-align: left !important
+    font-size: 18px !important;
+    text-align: left !important;
+    color: #000000 !important;
+}
+.details h3{
+    font-size: 18px
 }
 .skills ul{
     padding-left: 20px;
-    margin: 0
+    margin: 0;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 80px !important
 }
 .skills li{
-    margin-top: 30px
+    margin-top: 30px;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
 }
 .progress{
     height: 5px !important;
@@ -201,6 +219,18 @@ p{
 .skills-text{
     height:300px;
     margin-bottom: 30px;
+}
+.skills-text h3{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    letter-spacing: 0.165em;
+
+    color: #000000;
 }
 .skills-text p{
     font-size: 18px
@@ -239,11 +269,17 @@ p{
     color: white;
     border-radius: 5px
 }
+#resume .heading ~ p{
+    position: absolute;
+    transform: translateX(-50%);
+    left:50%;
+    width: 45%;
+    color: #333333;
+}
 #resume{
     background-color: #E5E5E5
 }
 #experience{
-    background-color: #E5E5E5;
     padding-top:40px
 }
 .exp-middle{
@@ -264,36 +300,51 @@ p{
     height: 250px;
 }
 .exp-item h4{
-    font-weight: bolder
+    font-weight: bolder;
+    font-size: 20px !important
 }
 #resume .heading{
     font-size: 24px !important
 }
+#resume h2{
+    font-size: 36px 
+}
 .exp-left{
-    width: 260px;
+    width:22%;
     position: absolute;
-    left:5%;
+    left:10%;
     text-align: right;
     top:0;
     margin-top: 20px
 }
 .exp-right{
-    width: 55%;
+    width: 50% !important;
     position: absolute;
     left:38%;
     top:0;
     height:100%;
     border-left:1px solid black;
-    padding:20px 1px 20px 80px;
+    padding:20px 1px 20px 60px;
 }
 .exp-left p{
-    margin-top:-10px
+    margin-top:-10px;
+    font-size: 16px;
+    color: #A9A9A9 !important;
+}
+.exp-right p{
+    font-size: 16px;
+    color: #A9A9A9 !important;
 }
 .portfolio-text p{
-    font-size:1.2vw;
+    font-size:16PX;
+    color: #A9A9A9 !important;
     font-family: var(--primary-text)
 }
+#portfolio h1{
+    font-size: 36px 
+}
 .portfolio-text h4{
+    font-size: 30px !important;
     font-weight: 500;
     font-family: var(--bold)
 }
@@ -340,6 +391,13 @@ p{
     border-radius: 10px;
     transition: all 0.5s ease-in-out
 }
+.services-items h4{
+    font-size: 16px
+}
+.services-items p {
+    font-size: 16px !important;
+    color: #A9A9A9;
+}
 .services-items:hover{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1.05);
@@ -350,6 +408,12 @@ p{
     width:40px;
     height:2px;
     background-color: #000000;
+}
+#services h2{
+    font-size: 36px !important
+}
+#services h2 ~ p{
+    font-size: 16px !important
 }
 .milestone{
     width:100px;
@@ -362,6 +426,9 @@ p{
 .milestones{
     background-color: #6F2CFF;
     padding: 20px 14% !important;
+}
+.milestones p{
+    font-size: 18px !important
 }
 input{
     width: 60%;
@@ -384,11 +451,14 @@ textarea{
     color: white !important;
     height:50px !important
 }
+#contact h2{
+    font-size: 36px 
+}
 .reach-me{
     padding: 20px 12% !important;
 }
 .reach-me-item p{
-    font-size: 14px
+    font-size: 14px !important
 }
 .reach-me-item{
     color: #A9A9A9 !important;
@@ -399,6 +469,7 @@ textarea{
     flex-direction: column;
 }
 footer p{
+    font-size: 14px !important;
     width: 100% !important
 }
 footer{
@@ -607,23 +678,22 @@ footer span{
 /* experience positioning for 578px to 767px */
 @media only screen and (min-width:578px){
     @media only screen and (max-width:767px){
-        .exp-item{
-            position: relative;
-            height: 27vw;
+        .hero-text h1{
+            font-size: 65px !important
         }
-        .exp-item h4{
-            font-weight: bolder;
-            font-size: 22px !important
+        #About p{
+            font-size: 14px !important;
+            line-height: 27px !important
         }
-        .exp-item p{
+        .skills li{
+            font-size: 14px !important;
+        }
+        p{
             font-size: 14px !important
-        }
-        #resume .dif{
-            font-size: 24px !important
         }
         .exp-middle{
             position: absolute;
-            left:34% !important;
+            left:34%;
             top:0;
             background-color: #000000;
             border-radius: 50%;
@@ -632,36 +702,53 @@ footer span{
             display: flex;
             align-items: center;
             justify-content: center;
-            z-index: 100
+            z-index: 1
         } 
-        .exp-left{
-            width: 26vw !important;
-            left:2% !important;
-            padding-right: 10px
+        .exp-middle img{
+            width:25px !important
         }
-        p{
-            font-size: 12px !important
+        .exp-item{
+            position: relative;
+            height: 220px
         }
-        .exp-right p{
-            font-size: 12px !important
-        }
-        .exp-left p{
-            font-size: 12px !important
-        }
-        .exp-right h4, .exp-left h4{
+        .exp-item h4{
+            font-weight: bolder;
             font-size: 20px !important
         }
+        #resume .heading{
+            font-size: 24px !important
+        }
+        #resume .heading ~ p{
+            width: 80% !important;
+            margin-bottom: 50px !important;
+            font-size: 14px !important
+        }
+        .heading ~ p {
+            font-size: 14px !important
+        }
+        .exp-left{
+            width:22%;
+            position: absolute;
+            left:9%;
+            text-align: right;
+            top:0;
+            margin-top: 20px
+        }
         .exp-right{
-            width: 55%;
+            width: 50% !important;
             position: absolute;
             left:38%;
             top:0;
             height:100%;
             border-left:1px solid black;
-            padding:20px 1px 20px 40px;
+            padding:20px 1px 20px 40px !important;
+        }
+        .services-items p{
+            font-size: 14px !important
         }
         .exp-left p{
-            margin-top:-10px
+            margin-top:-10px;
+            font-size: 14px !important;
         }
         .portfolio{
             height: 260px !important;
@@ -670,8 +757,11 @@ footer span{
             justify-content: center;
             align-items: center;
         }
-        .services-items p{
-            font-size: 16px !important
+        .portfolio-text p{
+            font-size: 14px !important
+        }
+        .exp-right p{
+            font-size: 14px !important;
         }
         footer p{
             width: 100% !important;
@@ -686,7 +776,7 @@ footer span{
     @media only screen and (max-width:990px){
         .exp-middle{
             position: absolute;
-            left:35% !important;
+            left:35%;
             top:0;
             background-color: #000000;
             border-radius: 50%;
@@ -695,51 +785,66 @@ footer span{
             display: flex;
             align-items: center;
             justify-content: center;
-            z-index: 100
+            z-index: 1
         } 
         .exp-middle img{
-            width:30px !important
+            width:25px !important
         }
-        .exp-right p, .exp-left p{
-            font-size: 12px !important
+        .exp-item{
+            position: relative;
+            height: 250px
         }
-        .exp-left{
-            width: 30vw !important;
-            left:0% !important;
-            padding-right: 10px;
-            margin-right: 0 !important
-        }
-         h4{
+        .exp-item h4{
+            font-weight: bolder;
             font-size: 20px !important
         }
-        p{
-            font-size: 14px !important
+        #resume .heading{
+            font-size: 24px !important
+        }
+        #resume .heading ~ p{
+            width: 80% !important;
+            margin-bottom: 50px !important;
+            font-size: 16px !important
+        }
+        .heading ~ p {
+            font-size: 16px !important
+        }
+        .exp-left{
+            width:22%;
+            position: absolute;
+            left:10%;
+            text-align: right;
+            top:0;
+            margin-top: 20px
         }
         .exp-right{
-            width: 50%;
+            width: 50% !important;
             position: absolute;
             left:38%;
             top:0;
             height:100%;
             border-left:1px solid black;
-            padding:20px 1px 20px 80px;
+            padding:20px 1px 20px 40px !important;
         }
-        .exp-item{
-            padding: 0 0;
-            height: 200px !important
+        .services-items p{
+            font-size: 16px !important
+        }
+        .exp-left p{
+            margin-top:-10px;
+            font-size: 16px !important;
+        }
+         h4{
+            font-size: 20px !important
+        }
+        p{
+            font-size: 16px !important
         }
         .portfolio{
-            height: 260px !important;
+            height: 300px;
             width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        .exp-right p{
-            font-size: 12px !important;
-        }
-        .services-items p{
-            font-size: 16px !important
         }
         footer p{
             width: 100% !important
@@ -748,8 +853,7 @@ footer span{
 }
 
 /* experience positioning for screen sizes 1200px upwards */
-@media only screen and (min-width:1200px){
-    
+/* @media only screen and (min-width:1200px){
     .exp-middle{
         position: absolute;
         left:35%;
@@ -761,7 +865,7 @@ footer span{
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 100
+        z-index: 1
     } 
     .exp-item{
         position: relative;
@@ -770,19 +874,18 @@ footer span{
     .exp-item h4{
         font-weight: bolder
     }
-    #resume .dif{
+    #resume .heading{
         font-size: 24px !important
     }
     .exp-left{
-        width: 260px;
         position: absolute;
-        left:12%;
         text-align: right;
         top:0;
+        margin-left:50px;
         margin-top: 20px
     }
     .exp-right{
-        width: 55%;
+        width: 600px !important;
         position: absolute;
         left:38%;
         top:0;
@@ -790,13 +893,16 @@ footer span{
         border-left:1px solid black;
         padding:20px 1px 20px 80px;
     }
-    .services-items p{
+    .exp-right p{
         font-size: 16px !important
     }
     .exp-left p{
         margin-top:-10px
     }
-}
+    .services-items p{
+        font-size: 16px !important
+    }
+} */
 
 /* Experience positioning for extra large screens */
 @media only screen and (min-width:1500px){
@@ -821,9 +927,6 @@ footer span{
     .exp-item h4{
         font-weight: bolder
     }
-    #resume .dif{
-        font-size: 24px !important
-    }
     .exp-left{
         width: 320px;
         position: absolute;
@@ -841,42 +944,12 @@ footer span{
         border-left:1px solid black;
         padding:20px 1px 20px 80px;
     }
-    p{
-        font-size: 18px !important
-    }
-    .services-items p{
-        font-size: 16px !important
-    }
-    .exp-left p{
-        margin-top:-10px
-    }
 }
 @media only screen and (min-width:2070px){
     
     .exp-middle{
-        position: absolute;
         left:36.5%;
-        top:0;
-        background-color: #000000;
-        border-radius: 50%;
-        width: 70px;
-        height:70px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 100
     } 
-    .exp-item{
-        position: relative;
-        height: 250px;
-        padding:10px 20%
-    }
-    .exp-item h4{
-        font-weight: bolder
-    }
-    #resume .dif{
-        font-size: 24px !important
-    }
     .exp-left{
         width: 320px;
         position: absolute;
@@ -894,14 +967,8 @@ footer span{
         border-left:1px solid black;
         padding:20px 1px 20px 80px;
     }
-    p{
-        font-size: 18px !important
-    }
     .exp-left p{
         margin-top:-10px
-    }
-    .services-items p{
-        font-size: 16px !important
     }
 }
     
