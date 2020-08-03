@@ -517,7 +517,7 @@ footer span{
 }
 
 /* Css for mobile screen */
-@media only screen and (max-width:577px) {
+@media only screen and (max-width:578px) {
     main{
         background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../images/rectangle_2.jpg");
         height: 812px;
@@ -788,23 +788,25 @@ footer span{
         margin-top: 1px !important;
         text-align: left;
         left: 27%;
-        width: 200px !important
+        width: 200px !important;
+        margin-bottom:20px !important
     }
     .exp-right p{
         font-size:14px !important;
+        
     }
     .exp-item h4{
         font-size: 18px !important;
     }
     .exp-item{
         padding: 0 0;
-        height: 290px !important
+        height: 400px !important
     }
     .exp-right{
         margin-top:0px;
         left:17%;
         width:70vw !important;
-        padding:50px 5px 0 35px !important
+        padding:90px 5px 0 35px !important
     }
 }
 
@@ -839,7 +841,7 @@ footer span{
             margin-top:0px;
             left:17%;
             width:70vw !important;
-            padding:50px 5px 0 10vw !important
+            padding:70px 5px 0 10vw !important
         }
     }
 
@@ -871,7 +873,7 @@ footer span{
         }
         .exp-item{
             position: relative;
-            height: 250px
+            height: 350px
         }
         .exp-item h4{
             font-weight: bolder;
@@ -921,6 +923,9 @@ footer span{
             display: flex;
             justify-content: center;
             align-items: center;
+        }
+        .skills-text{
+            height: 500px !important
         }
         .portfolio-text p{
             font-size: 16px !important
