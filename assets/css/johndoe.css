@@ -517,7 +517,7 @@ footer span{
 }
 
 /* Css for mobile screen */
-@media only screen and (max-width:578px) {
+@media only screen and (max-width:576px) {
     main{
         background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../images/rectangle_2.jpg");
         height: 812px;
@@ -611,7 +611,7 @@ footer span{
         background-color: #000000 !important;
     }
     .skills-text{
-        height:250px;
+        height:300px;
         margin-bottom: 30px;
     }
     .skills-text h3{
@@ -777,12 +777,12 @@ footer span{
 /* Experience positioning for screen size 0px to 430px */
 @media only screen and (max-width:430px) {
     .exp-middle{
-        width:30px;
-        height: 30px;
-        left:11.8vw;
+        width:35px;
+        height: 35px;
+        left:10.8vw;
     }
     .exp-middle img{
-        width:20px
+        width:24px
     }
     .exp-left{
         margin-top: 1px !important;
@@ -795,24 +795,29 @@ footer span{
         font-size:14px !important;
         
     }
+    .exp-left h4{
+        font-size:16px !important;
+        
+    }
     .exp-item h4{
-        font-size: 18px !important;
+        font-size: 16px !important;
     }
     .exp-item{
         padding: 0 0;
-        height: 400px !important
+        height: 450px !important;
+        max-height: 500px !important
     }
     .exp-right{
         margin-top:0px;
         left:17%;
         width:70vw !important;
-        padding:90px 5px 0 35px !important
+        padding:70px 5px 0 30px !important
     }
 }
 
 /* Experience positioning for screen size 431px to 577px */
 @media only screen and (min-width:431px) {
-    @media only screen and (max-width:577px) {
+    @media only screen and (max-width:576px) {
         .exp-middle{
             width:50px;
             height: 50px;
@@ -849,7 +854,7 @@ footer span{
 
 
 /* experience positioning for 578px to 767px */
-@media only screen and (min-width:578px){
+@media only screen and (min-width:577px){
     @media only screen and (max-width:767px){
         .hero-text h1{
             font-size: 65px !important
@@ -879,6 +884,29 @@ footer span{
             font-weight: bolder;
             font-size: 20px !important
         }
+        .skills ul{
+            padding-left: 0;
+            margin: 0;
+            text-align: start !important;
+            list-style-type: none;
+            font-family: Lora;
+            font-style: normal;
+            font-weight: bolder;
+        }
+        .skills li{
+            margin-top: 30px;
+            background-image: url(../images/bullet-game-bullet-game-enemy-icon-with-vector-34.png);
+            background-position: 0 0;
+            background-size: 1.6em 1.6em;
+            background-repeat: no-repeat;
+            font-family: Lora;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            padding-top: 0;
+            padding-left: 2em !important;
+            color: #A9A9A9 !important;
+        }
         #resume .heading{
             font-size: 16px !important
         }
@@ -901,6 +929,13 @@ footer span{
         .portfolio p{
             width: 100%;
         }
+        .portfolio{
+            height: auto !important;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
         .exp-right{
             width: 50% !important;
             position: absolute;
@@ -917,15 +952,9 @@ footer span{
             margin-top:-10px;
             font-size: 16px !important;
         }
-        .portfolio{
-            height: 260px !important;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
         .skills-text{
-            height: 500px !important
+            text-align: center !important;
+            height: 250px !important
         }
         .portfolio-text p{
             font-size: 16px !important
