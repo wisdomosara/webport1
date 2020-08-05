@@ -22,7 +22,6 @@ h1,h2,h3,h4{
     height: auto;
     position: relative;
     transition: all 1s ;
-    overflow-y:scroll;
 }
 .hide{
     opacity: 0;
@@ -841,7 +840,7 @@ footer span{
         margin-top:0px;
         left:17%;
         width:70vw !important;
-        padding:70px 5px 0 30px !important
+        padding:90px 5px 0 30px !important
     }
 }
 
@@ -876,7 +875,7 @@ footer span{
             margin-top:0px;
             left:17%;
             width:70vw !important;
-            padding:70px 5px 0 10vw !important
+            padding:90px 5px 0 8vw !important
         }
     }
 
