@@ -436,6 +436,9 @@ p{
     background-color:rgb(16, 145, 165);
     order: 1;
 }
+#services{
+    background-color: #E5E5E5 !important
+}
 .services-items{
     width:270px;
     height:300px;
@@ -445,7 +448,6 @@ p{
     align-items: center;
     flex-direction: column;
     padding:20px 15px;
-    border: 2px solid #C4C4C4;
     border-radius: 10px;
     transition: all 0.3s ease-in-out
 }
@@ -869,7 +871,7 @@ footer span{
         }
         .exp-item{
             padding: 0 0;
-            height: 270px !important
+            height: 320px !important
         }
         .exp-right{
             margin-top:0px;
