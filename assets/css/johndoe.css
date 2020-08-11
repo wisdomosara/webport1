@@ -9,10 +9,10 @@
     --small-text-size:18px;
 }
 body,html{
-    margin: 0 !important;
-    padding: 0 !important;
+    color: #C4C4C4 !important;
     height: 100%;
     scroll-behavior: smooth;
+    background-color: rgb(17, 17, 17)
 }
 h1,h2,h3,h4{
     font-family: var(--bold)
@@ -20,7 +20,7 @@ h1,h2,h3,h4{
 .mainn{
     display: none;
     height: auto;
-    position: relative;
+    background-color: #000000;
     transition: all 1s ;
 }
 .hide{
@@ -64,9 +64,13 @@ h1,h2,h3,h4{
     border-style:none !important
 }
 .navbar{
-    position: relative;
-     background-color:transparent !important;
-     color:white !important
+    position: fixed !important;
+    left:0;
+    top:0;
+    width: 100%;
+     color:white !important;
+     z-index: 100 !important;
+     background-color: black !important;
  }
  .navbar a{
      color:white !important
@@ -100,7 +104,7 @@ h1,h2,h3,h4{
     100.0%  {color: #1976D2; opacity:0.5}
 }
 main{
-    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/hero_bg.jpg");
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
     height: 800px;
     width:100%;
     background-size: cover;
@@ -178,6 +182,9 @@ p{
 .icon-holder a{
     margin-right:20px;
 }
+#About{
+    background-color: rgb(20, 20, 20)
+}
 #About h1{
     font-size: 36px
 }
@@ -195,7 +202,7 @@ p{
 .details p{
     font-size: 18px !important;
     text-align: left !important;
-    color: #000000 !important;
+    color: rgb(109, 109, 109) !important;
 }
 .details h3{
     font-size: 18px 
@@ -234,37 +241,37 @@ p{
 .bar1{
     width:99%;
     height:5px;
-    background-color: #000000 !important;
+    background-color: #6F2CFF !important;
 }
 .bar2{
     width:90%;
     height:5px;
-    background-color: #000000 !important;
+    background-color: #6F2CFF !important;
 }
 .bar3{
     width:75%;
     height:5px;
-    background-color: #000000 !important;
+    background-color: #6F2CFF !important;
 }
 .bar4{
     width:70%;
     height:5px;
-    background-color: #000000 !important;
+    background-color: #6F2CFF !important;
 }
 .bar5{
     width:80%;
     height:5px;
-    background-color: #000000 !important;
+    background-color: #6F2CFF !important;
 }
 .bar6{
     width:80%;
     height:5px;
-    background-color: #000000 !important;
+    background-color: #6F2CFF !important;
 }
 .bar7{
     width:80%;
     height:5px;
-    background-color: #000000 !important;
+    background-color: #6F2CFF !important;
 }
 .skills-text{
     height:300px;
@@ -280,7 +287,7 @@ p{
 
     letter-spacing: 0.165em;
 
-    color: #000000;
+    color: #A9A9A9;
 }
 .skills-text p{
     font-size: 18px
@@ -328,7 +335,7 @@ p{
     font-size: 18px
 }
 #resume{
-    background-color: #E5E5E5
+    background-color: rgb(20, 20, 20)
 }
 #experience{
     padding-top:40px
@@ -374,7 +381,7 @@ p{
     left:38%;
     top:0;
     height:100%;
-    border-left:1px solid black;
+    border-left:1px solid #A9A9A9 !important;
     padding:20px 1px 20px 60px;
 }
 .exp-left p{
@@ -416,34 +423,31 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(20, 20, 20)
 }
 .portfolio img{
     max-height: 100% !important
 }
 .portfolio1{
-    background-color:rgb(1, 129, 1);
     order: 1;
 }
 .portfolio2{
-    background-color:#8C32F0;
     order: 1;
 }
 .portfolio3{
-    background-color:#F60000;
     order: 1
 }
 .portfolio4{
-    background-color:rgb(16, 145, 165);
     order: 1;
 }
 #services{
-    background-color: #E5E5E5 !important
+    background-color: rgb(20, 20, 20)
 }
 .services-items{
     width:270px;
     height:300px;
     margin-bottom: 50px;
-    background-color: #FFFFFF;
+    background-color: rgb(27, 26, 26);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -452,12 +456,14 @@ p{
     transition: all 0.3s ease-in-out
 }
 .services-items h4{
-    font-size: 16px
+    font-size: 16px;
+    color: white;
 }
 .services-items p {
     font-size: 16px !important;
     color: #A9A9A9;
 }
+
 .services-items:hover{
     transform: scale(1.05);
     transition: all 0.3s ease-in-out
@@ -465,7 +471,7 @@ p{
 .line{
     width:40px;
     height:2px;
-    background-color: #000000;
+    background-color: white
 }
 #services h2{
     font-size: 36px !important
@@ -490,13 +496,16 @@ p{
 input{
     width: 60%;
     border: none;
+    background-color:  rgb(20, 20, 20)!important;
     color: #A9A9A9;
+    outline: none !important;
     border-bottom: 1px solid #C4C4C4;
     margin-bottom: 30px !important;
 }
 textarea{
     width: 60%;
     border: none;
+    background-color:  rgb(20, 20, 20)!important;
     height: 146px;
     color: #A9A9A9;
     margin-bottom: 30px !important;
@@ -507,6 +516,9 @@ textarea{
     background-color: #6F2CFF !important;
     color: white !important;
     height:50px !important
+}
+#contact{
+    background-color: rgb(20, 20, 20)
 }
 #contact h2{
     font-size: 36px 
@@ -550,15 +562,18 @@ footer span{
 /* Css for mobile screen */
 @media only screen and (max-width:576px) {
     main{
-        background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url("../images/rectangle_2.jpg");
-        height: 812px;
+        background-image:linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+        height: 650px;
         background-repeat: no-repeat;
     }
-    /* p{
+    p{
         font-size: 14px !important
-    } */
+    }
     .navbar{
         z-index: 2 !important;
+    }
+    .collapse{
+        background-color: transparent !important;
     }
     .hero-text{
         padding-top: 200px;
@@ -594,7 +609,7 @@ footer span{
     .profile p{
         padding-right: 2vw;
         line-height: 30px;
-        font-size: 14px !important;
+        font-size: 16px !important;
         text-align: center;
         color: #A9A9A9;
     }
@@ -642,7 +657,7 @@ footer span{
         background-color: #000000 !important;
     }
     .skills-text{
-        height:300px;
+        height:350px;
         margin-bottom: 30px;
     }
     .skills-text h3{
@@ -655,10 +670,10 @@ footer span{
     
         letter-spacing: 0.165em;
     
-        color: #000000;
+        color: #A9A9A9;
     }
     .skills-text p{
-        font-size: 16px
+        font-size: 14px !important
     }
     .skills h3{
         font-size: 16px !important
@@ -687,7 +702,7 @@ footer span{
         font-size: 16px
     }
     #resume{
-        background-color: #E5E5E5
+        background-color: rgb(20, 20, 20)
     }
     #experience{
         padding-top:20px
