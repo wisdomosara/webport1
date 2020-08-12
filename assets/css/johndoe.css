@@ -177,7 +177,7 @@ p{
 }
 .icon-holder{
     position: absolute;
-    top:50%;
+    top:40%;
 }
 .icon-holder a{
     margin-right:20px;
@@ -300,6 +300,9 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.button-flex a{
+    min-width:147px !important;
 }
 .button-flex button{
     font-size: 12px;
@@ -689,11 +692,17 @@ footer span{
     .button-flex{
         display: flex;
         flex-direction: column;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .button-flex a{
+        min-width:100% !important;
+        
     }
     .button-flex button{
-        width:100% !important;
+       width: 100% !important;
         height:50px !important;
-        margin:20px 20px;
+        margin:20px 0;
         text-align: center !important;
     }
     
