@@ -340,6 +340,10 @@ p{
 #experience{
     padding-top:40px
 }
+#resume a{
+    color: #6F2CFF;
+    text-decoration: none;
+}
 .exp-middle{
     position: absolute;
     left:35%;
