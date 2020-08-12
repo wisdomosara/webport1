@@ -11,13 +11,13 @@ app.post('/formProcess', function (req, res) {
     var smtpTransport = nodemailer.createTransport("SMTP",{
        service: "Gmail", 
        auth: {
-       user: "email@gmail.com",
-       pass: "gmailPassword"
+       user: "wisdomosara@gmail.com",
+       pass: "Ikhuoria2"
        }});
 
    smtpTransport.sendMail({  //email options
-   from: "Sender Name <email@gmail.com>",
-   to: "Receiver Name <receiver@email.com>", // receiver
+   from: "Sender Name <wisdomosara@gmail.com>",
+   to: "Receiver Name <wisdomosara@email.com>", // receiver
    subject: "Emailing with nodemailer", // subject
    html: "here your data goes" // body (var data which we've declared)
     }, function(error, response){  //callback
