@@ -1,6 +1,6 @@
 
 window.onload = function() {
-   
+    
     document.querySelector(".preload").classList.add("hide")
     document.querySelector(".mainn").style.display = "block"
     console.log("hidee")
@@ -19,13 +19,23 @@ if(clicked) {
  })
     new WOW().init();
 let navLinks = document.querySelectorAll(".nav-item")
-
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+    clicked = !clicked
+    if(clicked) {
+        img.src = "./assets/images/icons8-delete-30.png"
+        console.log("open")
+    }else {
+       img.src = "./assets/images/hamburger.png"
+       }
+});
 navLinks.forEach(function(link) {
     link.addEventListener("click", function() {
         navLinks.forEach(function(links) {
             links.classList.remove("active");
         })
-        link.classList.add("active")
+        link.classList.add("active");
+        
     })
 })
 
