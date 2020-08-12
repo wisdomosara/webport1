@@ -17,12 +17,6 @@ if(clicked) {
    }
  })
     new WOW().init();
-    var options = {
-        strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
-        typeSpeed: 40
-      };
-      
-      var typed = new Typed('.typing', options);
 let navLinks = document.querySelectorAll(".nav-item")
 
 navLinks.forEach(function(link) {
