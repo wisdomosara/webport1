@@ -12,7 +12,7 @@ app.post('/formProcess', function (req, res) {
        service: "Gmail", 
        auth: {
        user: "wisdomosara@gmail.com",
-       pass: "Ikhuoria2"
+       pass: "Ikhuoria1996"
        }});
 
    smtpTransport.sendMail({  //email options
