@@ -105,7 +105,7 @@ h1,h2,h3,h4{
 }
 main{
     background-image:linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-    height: 650px;
+    height: 100vh;
     width:100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -145,9 +145,12 @@ p{
     border-bottom: 2px solid #6F2CFF
 }
 .hero-text{
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     color: white;
-    top:26%;
+    padding-top:35vh !important;
 }
 .hero-text button{
     color: white;
@@ -164,20 +167,16 @@ p{
     font-weight: bolder
 }
 .hero-text p{
-    width: 200px;
     font-weight: 200;
     color: white;
     text-align: center;
-    padding: 0 !important;
-    position: relative;
-    transform: translateX(-50%);
-    left:50%;
+    padding: 5px !important;
     border-right:2px solid white !important;
     border-left:2px solid white !important
 }
 .icon-holder{
-    position: absolute;
-    top:40%;
+    position: absolute !important;
+    bottom: 30px !important
 }
 .icon-holder a{
     margin-right:20px;
@@ -473,7 +472,8 @@ p{
 }
 
 .services-items:hover{
-    transform: scale(1.05);
+    transform: scale(1.1);
+
     transition: all 0.3s ease-in-out
 }
 .line{
@@ -487,37 +487,30 @@ p{
 #services h2 ~ p{
     font-size: 16px !important
 }
-.milestone{
-    width:100px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px 0
-}
-.milestones{
-    background-color: #6F2CFF;
-}
-.milestones p{
-    font-size: 18px !important
-}
 input{
     width: 60%;
     border: none;
-    background-color:  rgb(20, 20, 20)!important;
+    background-color:  rgb(5, 5, 5)!important;
     color: #A9A9A9;
     outline: none !important;
     border-bottom: 1px solid #C4C4C4;
     margin-bottom: 30px !important;
+    transition: 1s all ease
+}
+input:focus, textarea:focus{
+    border-bottom: 1px solid #6F2CFF;
+    transition: 1s all ease
 }
 textarea{
     width: 60%;
     border: none;
-    background-color:  rgb(20, 20, 20)!important;
+    background-color:  rgb(0, 0, 0)!important;
     height: 146px;
     color: #A9A9A9;
     margin-bottom: 30px !important;
-    border-bottom: 1px solid #C4C4C4
+    outline: none !important;
+    border-bottom: 1px solid #C4C4C4;
+    transition: 1s all ease
 }
 .submit{
     width:60% !important;
@@ -526,13 +519,18 @@ textarea{
     height:50px !important
 }
 #contact{
-    background-color: rgb(20, 20, 20)
+    background-color: rgb(0, 0, 0)
 }
 #contact h2{
     font-size: 36px 
 }
 .reach-me-item p{
     font-size: 14px !important
+}
+.reach-me-item a, .reach-me-item a:hover{
+    font-size: 14px !important;
+    color: #A9A9A9;
+    text-decoration: none !important
 }
 .reach-me-item{
     color: #A9A9A9 !important;
@@ -571,7 +569,7 @@ footer span{
 @media only screen and (max-width:576px) {
     main{
         background-image:linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-        height: 770px !important;
+        height: 100vh !important;
         background-repeat: no-repeat;
     }
     p{
@@ -584,19 +582,16 @@ footer span{
         background-color: transparent !important;
     }
     .hero-text{
-        padding-top: 200px;
-        position: static !important;
+        padding-top: 30vh !important;
         color: white;
-        top:27%;
-        margin-bottom: 50vw
     }
     .hero-text h1{
-        font-size:42px !important;
+        font-size:10vw !important;
         color:white;
         font-weight: bolder
     }
     .icon-holder{
-        top:10% !important;
+        bottom:10% !important;
     }
     .heading{
         font-size: 16px !important
