@@ -202,6 +202,14 @@ p{
     line-height: 30px;
     color: #A9A9A9;
 }
+.profile-pic{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/IMG_20200528_112110_556_1595542028515.jpg');
+    background-position-x: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100% !important;
+    height: 400px
+}
 .profile p{
     padding-right: 2vw;
     line-height: 30px;
