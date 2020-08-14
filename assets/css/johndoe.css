@@ -21,7 +21,6 @@ canvas{
     background-color: #000;
     position: absolute !important;
     width: 100% !important;
-
 }
 .mainn{
     display: none;
@@ -201,14 +200,6 @@ p{
     font-size: 18px;
     line-height: 30px;
     color: #A9A9A9;
-}
-.profile-pic{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../images/IMG_20200528_112110_556_1595542028515.jpg');
-    background-position-x: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100% !important;
-    height: 400px
 }
 .profile p{
     padding-right: 2vw;
@@ -525,7 +516,7 @@ footer span{
         font-size: 14px !important
     }
     .navbar{
-        z-index: 100 !important;
+        z-index: 2 !important;
     }
     .collapse{
         background-color: transparent !important;
