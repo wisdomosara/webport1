@@ -198,83 +198,14 @@ p{
     font-size: 18px;
     color: #A9A9A9;
 }
-.details p{
-    font-size: 18px !important;
-    text-align: left !important;
-    color: rgb(109, 109, 109) !important;
-}
-.details h3{
-    font-size: 18px 
-}
-.skills ul{
-    padding-left: 0;
-    margin: 0;
-    list-style-type: none;
-    font-family: Lora;
-    font-style: normal;
-    font-weight: bolder;
-    font-size: 80px !important
-}
-.skills h3{
-    font-size: 18px
-}
-.skills li{
-    margin-top: 30px;
-    font-family: Lora;
-    background-image: url(../images/bullet-game-bullet-game-enemy-icon-with-vector-34.png);
-    background-position: 0 0;
-    background-size: 1.8em 1.8em;
-    background-repeat: no-repeat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    padding-top: 5px;
-    padding-left: 2em;
-    line-height: 23px;
-    color: #A9A9A9 !important;
-}
-.progress{
-    height: 5px !important;
-    background-color:#C4C4C4
-}
-.bar1{
-    width:99%;
-    height:5px;
+.skills-text button{
     background-color: #6F2CFF !important;
+    color: white !important;
 }
-.bar2{
-    width:90%;
-    height:5px;
+.skills-text button a , .skills-text button a:hover{
     background-color: #6F2CFF !important;
-}
-.bar3{
-    width:75%;
-    height:5px;
-    background-color: #6F2CFF !important;
-}
-.bar4{
-    width:70%;
-    height:5px;
-    background-color: #6F2CFF !important;
-}
-.bar5{
-    width:80%;
-    height:5px;
-    background-color: #6F2CFF !important;
-}
-.bar6{
-    width:80%;
-    height:5px;
-    background-color: #6F2CFF !important;
-}
-.bar7{
-    width:80%;
-    height:5px;
-    background-color: #6F2CFF !important;
-}
-.skills-text{
-    height:300px;
-    margin-bottom: 30px;
+    color: white !important;
+    text-decoration: white !important;
 }
 .skills-text h3{
     font-family: Poppins;
@@ -659,7 +590,6 @@ footer span{
         background-color: #000000 !important;
     }
     .skills-text{
-        height:350px;
         margin-bottom: 30px;
     }
     .skills-text h3{
