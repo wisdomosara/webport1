@@ -17,6 +17,12 @@ body,html{
 h1,h2,h3,h4{
     font-family: var(--bold)
 }
+canvas{
+    background-color: #000;
+    position: absolute !important;
+    width: 100% !important;
+
+}
 .mainn{
     display: none;
     height: auto;
@@ -150,6 +156,7 @@ p{
     align-items: center;
     flex-direction: column;
     color: white;
+    z-index: 3!important;
     padding-top:35vh !important;
 }
 .hero-text button{
@@ -159,17 +166,20 @@ p{
 .hero-text h4{
     color:#6F2CFF;
     font-size: 34px;
+    z-index: 99;
     font-weight: bolder
 }
 .hero-text h1{
     font-size:84px;
     color:white;
+    z-index: 99;
     font-weight: bolder
 }
 .hero-text p{
     font-weight: 200;
     color: white;
     text-align: center;
+    z-index: 99;
     padding: 5px !important;
     border-right:2px solid white !important;
     border-left:2px solid white !important
@@ -507,7 +517,7 @@ footer span{
         font-size: 14px !important
     }
     .navbar{
-        z-index: 2 !important;
+        z-index: 100 !important;
     }
     .collapse{
         background-color: transparent !important;
