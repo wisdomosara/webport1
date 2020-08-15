@@ -147,7 +147,11 @@ p{
     color: #6F2CFF;
 }
 .active{
-    border-bottom: 2px solid #6F2CFF
+    border-bottom: 2px solid #6F2CFF;
+    
+}
+.active a{
+    color: #6F2CFF !important
 }
 .hero-text{
     display: flex;
