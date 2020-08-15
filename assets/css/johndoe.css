@@ -148,10 +148,12 @@ p{
 }
 .active{
     border-bottom: 2px solid #6F2CFF;
+    transform: scale(1.03)
     
 }
 .active a{
-    color: #6F2CFF !important
+    color: #6F2CFF !important;
+    transform: scale(1.02)
 }
 .hero-text{
     display: flex;
