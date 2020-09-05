@@ -23,4 +23,4 @@ app.post('/bmicalculator', function(req,res) {
     res.send("thanks from the calculator .... answer is " + answer)
 })
 
-app.listen(PORT, () => log('Server is starting on ' + PORT));
+app.listen(PORT || 3000, () => log('Server is starting on ' + PORT));
