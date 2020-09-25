@@ -1,3 +1,4 @@
+require('dotenv').config()
 const express = require('express');
 const log = console.log;
 const app = express();
@@ -19,11 +20,11 @@ app.post('/', function(req,res) {
     log(req.body)
     
     const mailgun = require("mailgun-js");
-    const DOMAIN = "sandboxed30001b3d994878813812af418ba464.mailgun.org";
-    const mg = mailgun({apiKey: "5a3c95280ad515dab0044d4414ca9353-cb3791c4-951831c8", domain: DOMAIN});
+    const DOMAIN = process.env.DOMAIN;
+    const mg = mailgun({apiKey: process.env.APIKEY, domain: DOMAIN});
     const data = {
         from: req.body.email,
-        to: "wisdomosara@gmail.com",
+        to: "wisdomosara1@gmail.com",
         subject: req.body.subject,
         text: req.body.message
     };
