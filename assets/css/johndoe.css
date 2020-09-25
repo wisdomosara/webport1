@@ -289,8 +289,9 @@ p{
     padding-top:40px
 }
 #resume a{
-    color: #6F2CFF;
+    color: white !important;
     text-decoration: none;
+    background-color: #6F2CFF !important;
 }
 .exp-middle{
     position: absolute;
@@ -522,7 +523,7 @@ footer span{
         font-size: 14px !important
     }
     .navbar{
-        z-index: 2 !important;
+        z-index: 10000 !important;
     }
     .collapse{
         background-color: transparent !important;

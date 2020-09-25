@@ -38,6 +38,23 @@ window.onload = function() {
             
         })
     })
+
+    document.querySelector(".form1").onsubmit = function(e) {
+        console.log("targeted")
+        e.preventDefault();
+        
+            $.post("/",
+            {
+              name: document.querySelector("#name").value,
+              email: document.querySelector("#email").value,
+              subject: document.querySelector("#subject").value,
+              message: document.querySelector("#message").value
+            },
+            function(data,status){
+              $(".success").text(data.response);
+              $(".form1").remove()
+            });
+    }
     var canvas = document.getElementById('nokey'),
     can_w = parseInt(canvas.getAttribute('width')),
     can_h = parseInt(canvas.getAttribute('height')),
