@@ -434,6 +434,10 @@ p{
 #services h2 ~ p{
     font-size: 16px !important
 }
+#gallery img {
+    max-height: auto;
+   
+}
 input{
     width: 60%;
     border: none;
