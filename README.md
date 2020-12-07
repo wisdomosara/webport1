@@ -3,7 +3,7 @@
 Official Portfolio Site for myself. 
 
 you can view the live link here
-https://wisdomosara.github.io/webport1
+https://wisdomosara.herokuapp.com
 
 features:
 1. Pixel perfect implementation of design.
